@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="margem">
+        <h1 id="titulo">Formulário de Cadastro</h1>
+        <br>
+    </div>
+    <form>
+        <div class="campo">
+            <label for="nome"><strong>Nome completo:</strong></label>
+            <input type="text" nome="text" id="text" required>
+        </div>
+    
+        <div class="campo">
+            <label for="email"><strong>E-mail:</strong></label>
+            <input type="email" nome="email" id="email" required>
+        </div>
+        <div class="campo">
+            <label for="celular"><strong>Celular:</strong></label>
+            <input type="number" nome="number" id="number" required>
+        </div>
+        <div class="campo">
+            <label><strong>Qual sua aplicação de preferência ?</strong></label>
+            <label>
+                <input type="radio" name="devweb" value="frontend" checked>Front-end
+            </label>
+            <label>
+                <input type="radio" name="devweb" value="backend">Back-end
+            </label>
+            <label>
+                <input type="radio" name="devweb" value="fullstack">Fullstack
+            </label>
+        </div>
+        <div class="campo">
+            <label for="senioridade"><strong>Senioridade</strong></label>
+            <select id="senoridade">
+                <option selected disabled value="">Selecione...</option>
+                <option>Estágiario</option>
+                <option>Junior</option>
+                <option>Pleno</option>
+                <option>Sênior</option>
+            </select>
+        </div>
+            <div id="check">
+                <label><strong>Selecione as tecnologias que você possui conhecimento:</strong></label><br><br>
+                <input type="checkbox" id="tecnologia1" value="HTML">
+                <label for="tecnologia1">HTML/CSS</label>
+
+                <input type="checkbox" id="tecnologia2" value="JavaScript">
+                <label for="tecnologia2">JavaScript</label>
+
+                <input type="checkbox" id="tecnologia3" value="SQL">
+                <label for="tecnologia3">SQL</label>
+
+                <input type="checkbox" id="tecnologia4" value="Python">
+                <label for="tecnologia4">Python</label>
+
+                <input type="checkbox" id="tecnologia5" value="TypeScript">
+                <label for="tecnologia5">TypeScript</label>
+
+                <input type="checkbox" id="tecnologia6" value="Java">
+                <label for="tecnologia6">Java</label>
+
+                <input type="checkbox" id="tecnologia7" value="C#">
+                <label for="tecnologia7">C#</label>
+
+                <input type="checkbox" id="tecnologia8" value="C++">
+                <label for="tecnologia8">C++</label>
+
+                <input type="checkbox" id="tecnologia9" value="PHP">
+                <label for="tecnologia9">PHP</label>
+
+                <input type="checkbox" id="tecnologia10" value="C">
+                <label for="tecnologia10">C</label>
+
+                <input type="checkbox" id="tecnologia11" value="Outros">
+                <label for="tecnologia11">Outros</label>
+            </div><br><br>
+            <div id="check">
+                <label><strong>Selecione os frameworks que você possui conhecimento:</strong></label><br><br>
+                <input type="checkbox" id="framework1" value="React.js">
+                <label for="framework1">React.js</label>
+
+                <input type="checkbox" id="framework2" value="jQuery">
+                <label for="framework2">jQuery</label>
+
+                <input type="checkbox" id="framework3" value="Angular">
+                <label for="framework3">Angular</label>
+
+                <input type="checkbox" id="framework4" value="Express">
+                <label for="framework4">Express</label>
+
+                <input type="checkbox" id="framework5" value="ASP.NET Core">
+                <label for="framework5">ASP.NET Core</label>
+
+                <input type="checkbox" id="framework6" value="Vue.js">
+                <label for="framework6">Vue.js</label>
+
+                <input type="checkbox" id="framework7" value="ASP.NET">
+                <label for="framework7">ASP.NET</label>
+
+                <input type="checkbox" id="framework8" value="Spring">
+                <label for="framework8">Spring</label>
+
+                <input type="checkbox" id="framework9" value="Flask">
+                <label for="framework9">Flask</label>
+
+                <input type="checkbox" id="framework10" value="Django">
+                <label for="framework10">Django</label>
+
+                <input type="checkbox" id="framework11" value="Angular.js">
+                <label for="framework11">Angular.js</label>
+
+                <input type="checkbox" id="framework12" value="Outros">
+                <label for="framework12">Outros</label>
+            </div><br><br>
+            <div class="campo">
+                <label class="custom-file-upload">
+                    <input type="file"/>
+                    Currículo upload
+                </label>
+            </div>
+            <div class="campo">
+                <label><strong>Linkedin:</strong></label>
+                <input type="link" /><br>
+                <label><strong>Github:</strong></label>
+                <input type="link" />
+            </div>
+        <div class="campo">
+            <br>
+            <label><strong>Nos conte sobre sua experiência na área da tecnologia. Caso seja um juninho em busca da primeira oportunidade, 
+            nos conte sobre cursos, projetos ou conquistas relacionados à tecnologia.</strong></label><br>
+            <textarea row="12" style="width: 60%" id="experiencia" name="experiencia"></textarea>
+            <style>
+                .campo-textarea {
+                    max-width: 100%;
+                }
+            </style>
+
+            <button class="botao" type="submit">Concluído</button>
+        </div>
+    </form>
+</body>
+</html>
